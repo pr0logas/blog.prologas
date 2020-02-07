@@ -4,5 +4,9 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="bootstrap-vue" level="application" />
+    <orderEntry type="library" name="vue" level="application" />
+    <orderEntry type="library" name="bootstrap-vue-icons" level="application" />
   </component>
 </module>
