@@ -1,39 +1,65 @@
 
-# How to dump mysql database from command line on linux machine?
+# How to mount AWS S3 bucket on Centos 7.x machine?
 ---
 ###### 2020-02-07 || Category: Centos / AWS
 
 ![MysqlDump](assets/images/Amazon_web_services_S3.jpg)
 
-At first let's quickly setup our mysql database credentials file. Let's assume you are using **vim** editor:
+Make sure you don't have already installed fuse software. If yes, remove it:
 
 ```
-vim ~/.mysql_cred.cnf
+yum remove fuse fuse-s3fs -y
 ```
 
-Paste your database credentials information:
+Now install gcc and other tools which are required in order to build **s3fs-fuse**:
 ```
-[client]
-user=root
-password=myLongandSuperSecretPass
+yum install gcc libstdc++-devel gcc-c++ curl-devel libxml2-devel openssl-devel mailcap automake git fuse-devel -y
 ```
 
-Now we can start dumping our whole database by command:
+Let's download the source code from official repository and compile it:
 
 ``` js
-mysqldump --defaults-file=~/.mysql_cred.cnf --databases mydbname > /tmp/mydumpedDBname.sql --verbose 
+git clone https://github.com/s3fs-fuse/s3fs-fuse.git
+cd s3fs-fuse
+./autogen.sh
+./configure
+make
+make install
 ```
 
-Or you can choose to dump a **specific table** from database:
+After successful compilation set our BUCKET credentials, should be in this link:
 
-``` js
-mysqldump --defaults-file=~/.mysql_cred.cnf --databases mydbname --tables /tmp/mytablename > mytabledump.sql --verbose 
+https://console.aws.amazon.com/iam/home?#/security_credentials
+
+The syntax:
+
+```AWS_ACCESS_KEY_ID:AWS_SECRET_ACCESS_KEY```
+
+Open a file editor and create aws credentials file:
+
+```
+vi ~/.passwd-s3fs
 ```
 
-Finally, remove credentials file for security reasons:
-
 ```
-rm ~/.mysql_cred.cnf
+MyKeyID:SecretKey
 ```
 
-That's it, hope this was helpful.
+Set permissions for **.passwd-s3fs**
+```
+chmod 600 ~/.passwd-s3fs
+```
+
+Create an empty directory and try to mount the bucket:
+
+```
+mkdir -p ~/S3
+```
+```
+/usr/local/bin/s3fs yourbucketname ~/S3 -o passwd_file=~/.passwd-s3fs
+```
+
+Finally check your bucket:
+```
+cd ~/S3/ && ls -l
+```
