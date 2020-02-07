@@ -37,3 +37,4 @@ rm ~/.mysql_cred.cnf
 ```
 
 That's it, hope this was helpful.
+---
