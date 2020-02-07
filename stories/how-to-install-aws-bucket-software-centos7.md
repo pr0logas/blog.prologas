@@ -3,7 +3,7 @@
 ---
 ###### 2020-02-07 || Category: Centos / AWS
 
-![MysqlDump](assets/images/Amazon_web_services_S3.jpg)
+![MysqlDump](https://raw.githubusercontent.com/pr0logas/blog.prologas/master/assets/images/Amazon_web_services_S3.jpg)
 
 Make sure you don't have already installed fuse software. If yes, remove it:
 

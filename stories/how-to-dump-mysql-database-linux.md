@@ -3,7 +3,7 @@
 ---
 ###### 2020-02-07 || Category: Linux / databases
 
-![MysqlDump](assets/images/mysqldump.png)
+![MysqlDump](https://raw.githubusercontent.com/pr0logas/blog.prologas/master/assets/images/mysqldump.png)
 
 At first let's quickly setup our mysql database credentials file. Let's assume you are using **vim** editor:
 
