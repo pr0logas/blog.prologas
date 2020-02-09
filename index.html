@@ -16,7 +16,7 @@
 
     function allStories() {
     console.log("Works")
-    $("#includedContent").load("pages/allstories.html"); 
+    $("#allPosts").load("pages/allstories.html"); 
     };
 
     </script> 
@@ -35,7 +35,7 @@
         <a class="nav-link active" href="https://prologas.net">Home</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" onclick="allStories()" href="#">All posts</a>
+        <a class="nav-link" id="allPosts" onclick="allStories()" href="#">All posts</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="#">About me</a>
