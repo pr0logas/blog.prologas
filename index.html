@@ -13,9 +13,12 @@
           href="/assets/ico/favicon.ico" />
 
     <script> 
-    $(function(){
-      $("#includedContent").load("pages/allstories.html"); 
-    });
+
+    function allStories() {
+    console.log("Works")
+    $("#includedContent").load("pages/allstories.html"); 
+    };
+
     </script> 
 
 </head>
@@ -32,7 +35,7 @@
         <a class="nav-link active" href="https://prologas.net">Home</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" onclick="playbtn()" href="#">All posts</a>
+        <a class="nav-link" onclick="allStories()" href="#">All posts</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="#">About me</a>
