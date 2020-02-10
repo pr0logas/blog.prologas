@@ -15,30 +15,29 @@
     <script> 
 
     function allStories() {
-    console.log("Works")
-        $('.container-sm').load("pages/allstories.html");
+        $('#zero-md').hide();
+        $('.container-allstories').load("pages/allstories.html");
+        $("#home").removeClass("nav-link active").addClass("nav-link");
+        $("#allPosts").removeClass("nav-link").addClass("nav-link active");
     }
-
-    </script> 
-
+    </script>
 </head>
 
 <body>
 
 <script type="module" src="assets/js/pickrandom.js"></script>
 
-
 <div class="container-md">
     <img src="assets/ico/android-chrome-192x192.png" class="rounded float-left" alt="..." height="42" width="42">
     <ul class="nav nav-tabs justify-content-end">
     <li class="nav-item">
-        <a class="nav-link active" href="//prologas.net">Home</a>
+        <a class="nav-link active" id="home" href="//vue.test">Home</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" id="allPosts" onclick="allStories()" href="#">All posts</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">About me</a>
+        <a class="nav-link" id="aboutme" href="#">About me</a>
     </li>
 </ul>
 </div>
@@ -46,7 +45,8 @@
 <br>
 
 <div class="container-sm">
-    <zero-md src="stories/how-to-install-aws-bucket-software-centos7.md"></zero-md>
+    <zero-md id="zero-md" src="stories/how-to-install-aws-bucket-software-centos7.md"></zero-md>
+    <div class="container-allstories"></div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
