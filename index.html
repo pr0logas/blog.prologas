@@ -11,13 +11,13 @@
     <link rel="icon"
           type="image/ico"
           href="/assets/ico/favicon.ico" />
-
+    <!-- favicon -->
     <script> 
 
     function allStories() {
     console.log("Works")
-    $("#allPosts").load("pages/allstories.html"); 
-    };
+        $('.container-sm').load("pages/allstories.html");
+    }
 
     </script> 
 
@@ -32,7 +32,7 @@
     <img src="assets/ico/android-chrome-192x192.png" class="rounded float-left" alt="..." height="42" width="42">
     <ul class="nav nav-tabs justify-content-end">
     <li class="nav-item">
-        <a class="nav-link active" href="https://prologas.net">Home</a>
+        <a class="nav-link active" href="//prologas.net">Home</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" id="allPosts" onclick="allStories()" href="#">All posts</a>
