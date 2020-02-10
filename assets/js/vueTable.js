@@ -53,28 +53,28 @@ Vue.component('demo-grid', {
   }
 })
 
-var allDates = [];
+// set empty list;
+var allData = [];
 var allStories = [];
 
-parseStories()
-
-function parseStories() {
+// execute anonymous func and parse current dict elements;
+(function() {
     for (var key in Stories) {
     	var value = Stories[key]
-    	allDates.unshift(key)
-    	allDates.unshift(allStories)
-    }		
-}
+    	allData.push({ 'date' : key })
+    	allData.push({ 'storie' : value })
+    }
+    serveTable()		
+})()
 
-var demo = new Vue({
-  el: '#demo',
+// serve to the table;
+function serveTable() {
+var storiesTable = new Vue({
+  el: '#storiesTable',
   data: {
     searchQuery: '',
     gridColumns: ['date', 'storie'],
-    gridData: [
-      { date: allDates, storie: allStories }
-    ]
+    gridData: allData
   }
 })
-
-console.log(allDates, allStories)
+}
