@@ -61,8 +61,7 @@ var allStories = [];
 (function() {
     for (var key in Stories) {
     	var value = Stories[key]
-    	allData.push({ 'date' : key })
-    	allData.push({ 'storie' : value })
+    	allData.push({ 'date' : key, 'storie' : value})
     }
     serveTable()		
 })()
