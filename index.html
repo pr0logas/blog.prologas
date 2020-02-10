@@ -16,6 +16,8 @@
 
     function allStories() {
         $('#zero-md').hide();
+        $('.container-aboutme').hide();
+        $('.container-allstories').show();
         $('.container-allstories').load("pages/allstories.html");
         $("#home").removeClass("nav-link active").addClass("nav-link");
         $("#aboutme").removeClass("nav-link active").addClass("nav-link");
@@ -25,6 +27,7 @@
     function aboutMe() {
         $('#zero-md').hide();
         $('.container-allstories').hide();
+        $('.container-aboutme').show();
         $('.container-aboutme').load("pages/about.html");
         $("#home").removeClass("nav-link active").addClass("nav-link");
         $("#allposts").removeClass("nav-link active").addClass("nav-link");
