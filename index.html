@@ -18,7 +18,17 @@
         $('#zero-md').hide();
         $('.container-allstories').load("pages/allstories.html");
         $("#home").removeClass("nav-link active").addClass("nav-link");
-        $("#allPosts").removeClass("nav-link").addClass("nav-link active");
+        $("#aboutme").removeClass("nav-link active").addClass("nav-link");
+        $("#allposts").removeClass("nav-link").addClass("nav-link active");
+    }
+
+    function aboutMe() {
+        $('#zero-md').hide();
+        $('.container-allstories').hide();
+        $('.container-aboutme').load("pages/about.html");
+        $("#home").removeClass("nav-link active").addClass("nav-link");
+        $("#allposts").removeClass("nav-link active").addClass("nav-link");
+        $("#aboutme").removeClass("nav-link").addClass("nav-link active");
     }
     </script>
 </head>
@@ -34,10 +44,10 @@
         <a class="nav-link active" id="home" href="//vue.test">Home</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" id="allPosts" onclick="allStories()" href="#">All posts</a>
+        <a class="nav-link" id="allposts" onclick="allStories()" href="#">All posts</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" id="aboutme" href="#">About me</a>
+        <a class="nav-link" id="aboutme" onclick="aboutMe()" href="#">About me</a>
     </li>
 </ul>
 </div>
@@ -47,6 +57,7 @@
 <div class="container-sm">
     <zero-md id="zero-md" src="stories/how-to-install-aws-bucket-software-centos7.md"></zero-md>
     <div class="container-allstories"></div>
+    <div class="container-aboutme"></div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
