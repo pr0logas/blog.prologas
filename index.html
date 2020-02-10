@@ -34,35 +34,35 @@
 </head>
 
 <body>
+    <script type="module" src="assets/js/pickrandom.js"></script>
 
-<script type="module" src="assets/js/pickrandom.js"></script>
+    <div class="container-md">
+        <img src="assets/ico/android-chrome-192x192.png" class="rounded float-left" alt="..." height="42" width="42">
+        <ul class="nav nav-tabs justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link active" id="home" href="//vue.test">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="allposts" onclick="allStories()" href="#">All posts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="aboutme" onclick="aboutMe()" href="#">About me</a>
+        </li>
+    </ul>
+    </div>
 
-<div class="container-md">
-    <img src="assets/ico/android-chrome-192x192.png" class="rounded float-left" alt="..." height="42" width="42">
-    <ul class="nav nav-tabs justify-content-end">
-    <li class="nav-item">
-        <a class="nav-link active" id="home" href="//vue.test">Home</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="allposts" onclick="allStories()" href="#">All posts</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="aboutme" onclick="aboutMe()" href="#">About me</a>
-    </li>
-</ul>
-</div>
+    <br>
 
-<br>
+    <div class="container-sm">
+        <zero-md id="zero-md" src="stories/how-to-install-aws-bucket-software-centos7.md"></zero-md>
+        <div class="container-allstories"></div>
+        <div class="container-aboutme"></div>
+    </div>
 
-<div class="container-sm">
-    <zero-md id="zero-md" src="stories/how-to-install-aws-bucket-software-centos7.md"></zero-md>
-    <div class="container-allstories"></div>
-    <div class="container-aboutme"></div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
+
 </html>
