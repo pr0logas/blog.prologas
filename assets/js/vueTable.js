@@ -55,7 +55,6 @@ Vue.component('demo-grid', {
 
 // set empty list;
 var allData = [];
-var allStories = [];
 
 // execute anonymous func and parse current dict elements;
 (function() {
