@@ -60,7 +60,7 @@ var allData = [];
 (function() {
     for (var key in Stories) {
     	var value = Stories[key]
-    	allData.push({ 'date' : key, 'storie' : value})
+    	allData.push({ 'date' : key, 'stories' : value})
     }
     serveTable()		
 })()
@@ -71,7 +71,7 @@ var storiesTable = new Vue({
   el: '#storiesTable',
   data: {
     searchQuery: '',
-    gridColumns: ['date', 'storie'],
+    gridColumns: ['date', 'stories'],
     gridData: allData
   }
 })

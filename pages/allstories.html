@@ -1,35 +1,15 @@
-<script type="module" src="assets/js/vueTable.js"></script>
+<script type="module" src="assets/js/tables.js"></script>
 
-<script type="text/x-template" id="grid-template">
-  <table>
+<table id="stories-tableIndex" class="table table-sm">
     <thead>
       <tr>
-        <th v-for="key in columns"
-          @click="sortBy(key)"
-          :class="{ active: sortKey == key }">
-          {{ key | capitalize }}
-          <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'">
-          </span>
-        </th>
+        <th class="text-center">Date</th>
+        <th class="text-center">Category</th>
+        <th class="text-center">Subcategory</th>
+        <th class="text-center">Stories</th>
       </tr>
     </thead>
-    <tbody>
-      <tr v-for="entry in filteredHeroes">
-        <td v-for="key in columns">
-          {{entry[key]}}
-        </td>
-      </tr>
+    <tbody class="text-center">
+      
     </tbody>
-  </table>
-</script>
-
-<div id="storiesTable">
-  <form id="search">
-    Search <input name="query" v-model="searchQuery">
-  </form>
-  <demo-grid
-    :heroes="gridData"
-    :columns="gridColumns"
-    :filter-key="searchQuery">
-  </demo-grid>
-</div>
+    </table>
