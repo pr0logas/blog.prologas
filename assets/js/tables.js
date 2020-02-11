@@ -12,7 +12,7 @@ var ctableIndex = $('#stories-tableIndex').DataTable({
     bLengthChange: false,
     pageLength: 1000,
     order: [
-        [1, "desc"]
+        [0, "desc"]
     ],
     ajax: {
         url: setData,
@@ -36,7 +36,7 @@ var ctableIndex = $('#stories-tableIndex').DataTable({
                 json[key]['date'] = '<span class="' + styleBlock + '">' + value['date'] + '</span>'; 
                 json[key]['category'] = '<span class="' + styleCatDefault + '">' + value['category'] + '</span>';
                 json[key]['subcategory'] = '<span class="' + styleSubcatDefault + '">' + value['subcategory'] + '</span>';       
-                json[key]['stories'] = '<span><a href="#" onclick="showStory()">' + value['stories'] + '</a></span>';
+                json[key]['stories'] = '<span><a href="#" onclick="newStory()">' + value['stories'] + '</a></span>';
 
             });
 

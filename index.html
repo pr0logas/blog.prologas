@@ -17,6 +17,10 @@
     <!-- favicon -->
     <script> 
 
+    function newStory(value) {
+        console.log('haha', value)
+    }
+
     function allStories() {
         $('#zero-md').hide();
         $('.container-aboutme').hide();
@@ -41,12 +45,17 @@
 
 <body>
     <!--<script type="module" src="assets/js/pickrandom.js"></script>-->
+    <script type="module" src="assets/js/time.js"></script>
 
     <div class="container-md">
         <img src="assets/ico/android-chrome-192x192.png" class="rounded float-left" alt="..." height="42" width="42">
         <ul class="nav nav-tabs justify-content-end">
         <li class="nav-item">
-            <a class="nav-link active" id="home" href="//vue.test">Home</a>
+            <a class="nav-link">Good<span id="dayOrNight"></span><span id="time"></span></a>
+        </li>
+        <h5 class="h5"></h5>
+        <li class="nav-item">
+            <a class="nav-link active" id="home" href="//prologas.net">Home</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" id="allposts" onclick="allStories()" href="#">All posts</a>
@@ -63,6 +72,7 @@
         <zero-md id="zero-md" src="stories/how-to-install-aws-bucket-software-centos7.md"></zero-md>
         <div class="container-allstories"></div>
         <div class="container-aboutme"></div>
+        <div class="container-userStoryChoice"></div>
 
         </div>
     </div>
