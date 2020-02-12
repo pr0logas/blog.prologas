@@ -8,6 +8,7 @@
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
     <link rel="stylesheet" href="assets/css/table.css">
     <!-- favicon -->
@@ -15,13 +16,20 @@
           type="image/ico"
           href="/assets/ico/favicon.ico" />
     <!-- favicon -->
-    <script> 
+    <script>
 
     function newStory(value) {
-        console.log('haha', value)
+        $('#zero-md').hide();
+        $('.container-allstories').hide();
+        var div = $(".zero-userStoryChoiceClass")
+        div.attr("src","stories/" + value + ".md");
+        document.querySelector('#content').render();
+        div.removeClass("d-none");
+        console.log(value)
     }
 
     function allStories() {
+        $(".zero-userStoryChoiceClass").addClass("d-none");
         $('#zero-md').hide();
         $('.container-aboutme').hide();
         $('.container-allstories').load("pages/allstories.html");
@@ -32,6 +40,7 @@
     }
 
     function aboutMe() {
+        $(".zero-userStoryChoiceClass").addClass("d-none");
         $('#zero-md').hide();
         $('.container-allstories').hide();
         $('.container-aboutme').load("pages/about.html");
@@ -70,9 +79,9 @@
 
     <div class="container-sm">
         <zero-md id="zero-md" src="stories/how-to-install-aws-bucket-software-centos7.md"></zero-md>
+        <zero-md id="content" manual-render class="zero-userStoryChoiceClass d-none" src="stories/how-to-dump-mysql-database-linux.md"></zero-md>
         <div class="container-allstories"></div>
         <div class="container-aboutme"></div>
-        <div class="container-userStoryChoice"></div>
 
         </div>
     </div>

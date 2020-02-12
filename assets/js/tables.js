@@ -1,3 +1,5 @@
+// All stories table by category
+
 var setData = './../../stories.json'
 
 var ctableIndex = $('#stories-tableIndex').DataTable({
@@ -36,7 +38,7 @@ var ctableIndex = $('#stories-tableIndex').DataTable({
                 json[key]['date'] = '<span class="' + styleBlock + '">' + value['date'] + '</span>'; 
                 json[key]['category'] = '<span class="' + styleCatDefault + '">' + value['category'] + '</span>';
                 json[key]['subcategory'] = '<span class="' + styleSubcatDefault + '">' + value['subcategory'] + '</span>';       
-                json[key]['stories'] = '<span><a href="#" onclick="newStory()">' + value['stories'] + '</a></span>';
+                json[key]['stories'] = '<span><a href="#" onclick="newStory(' + "'" +value['stories'] + "'" + ')">' + value['stories'] + '</a></span>';
 
             });
 

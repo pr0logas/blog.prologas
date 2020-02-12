@@ -1,3 +1,5 @@
+// Used to show o'clock on nav-bar.
+
 function checkTime(i) {
     if (i < 10) {
         i = "0" + i;
