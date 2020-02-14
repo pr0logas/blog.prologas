@@ -10,5 +10,11 @@
     "stories": "how-to-install-aws-bucket-software-centos7",
     "category": "Linux",
     "subcategory": "AWS"
+  },
+  {
+    "date": "2020-02-14",
+    "stories": "how-to-dump-mysql-bash-script",
+    "category": "Linux",
+    "subcategory": "MySQL"
   }
 ]

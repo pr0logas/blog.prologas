@@ -1,7 +1,7 @@
 
 # How to dump mysql database from command line on linux machine?
 ---
-###### 2020-02-07 || Category: Linux / databases
+###### 2020-02-07 || Category: Linux / MySQL
 
 ![MysqlDump](https://raw.githubusercontent.com/pr0logas/blog.prologas/master/assets/images/mysqldump.png)
 

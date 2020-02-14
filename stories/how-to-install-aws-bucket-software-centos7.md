@@ -1,7 +1,7 @@
 
 # How to mount AWS S3 bucket on Centos 7.x machine?
 ---
-###### 2020-02-07 || Category: Centos / AWS
+###### 2020-02-07 || Category: Linux / AWS
 
 ![MysqlDump](https://raw.githubusercontent.com/pr0logas/blog.prologas/master/assets/images/Amazon_web_services_S3.jpg)
 
