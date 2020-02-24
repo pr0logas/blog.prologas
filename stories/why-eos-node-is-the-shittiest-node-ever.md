@@ -5,7 +5,7 @@
 
 ![EOS_Node](https://raw.githubusercontent.com/pr0logas/blog.prologas/master/assets/images/eos_node.jpg)
 
-As a Dev-Ops, I managed to run many different nodes for my own and business needs. Starting from Bitcoin / Dash / Ethereum / TRON / Waves and so on.
+As a Dev-Ops, I managed to run many different nodes for my own and business needs. Starting from BITCOIN / DASH / ETHEREUM / TRON / WAVES and so on.
 But we have to admit, EOS is a unique "creature" of all time.
 
 My goal is to sync a FULL historical node with all the data inside the blocks. But it seems it's easier to say than actually to do it. To be in detail, trying to sync since 2019 August with no success.

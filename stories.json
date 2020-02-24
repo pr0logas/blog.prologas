@@ -18,6 +18,12 @@
     "subcategory": "MySQL"
   },
   {
+    "date": "2020-02-21",
+    "stories": "how-to-create-terraform-automation-for-digitalocean",
+    "category": "Cloud",
+    "subcategory": "DigitalOcean"
+  },
+  {
     "date": "2020-02-24",
     "stories": "why-eos-node-is-the-shittiest-node-ever",
     "category": "BlockChain",
