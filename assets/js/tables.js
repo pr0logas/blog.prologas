@@ -28,7 +28,7 @@ var ctableIndex = $('#stories-tableIndex').DataTable({
                     styleCatDefault = 'badge badge-success'
 
                 if (value['category'] == 'BlockChain')
-                    styleCatDefault = 'badge badge-light'
+                    styleCatDefault = 'badge badge-secondary'
 
                 if (value['subcategory'] == 'MySQL')
                     styleSubcatDefault = 'badge badge-primary'
