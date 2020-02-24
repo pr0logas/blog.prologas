@@ -17,7 +17,7 @@ Ubuntu 18.04
 Latest EOSIO node (https://github.com/EOSIO/eos/releases)
 ```
 
-And the FULL node config:
+And the FULL historical node config:
 ```js
 #/usr/bin/env bash
 
@@ -59,13 +59,13 @@ If you need to update your seed list, you can catch them on third party website:
 
 ```https://eosnodes.privex.io/```
 
-Note that the seed nodes can have different ports so you have strictly typed the IP/DNS and the port (have no idea why it's not hardcoded as BTC for example?).
+Note that the seed nodes can have different ports so you have strictly typed the IP/DNS and the port (have no idea why it's not hardcoded as BTC for example?)
 
-``So far nothing serious so there is the problem?``
+**So far nothing serious so there is the problem?**
 
 The EOS node problem is that:
 ```
-Syncing on 1 CPU core; (I know, sounds like insanity for 100M+ blocks);
+Syncs on 1 CPU core; (I know, sounds like insanity for 100M+ blocks);
 Don't have a graceful shutdown of any kind;
 During the syncing HTTP API don't respond or have a latency out of normal understanding;
 Gives you a non-fatal error but stops the syncing after all;
@@ -78,7 +78,7 @@ Other no reason sync stops with no error or warn messages. As a bonus gives you 
 ![EOS_Node](https://raw.githubusercontent.com/pr0logas/blog.prologas/master/assets/images/eos_cpucore.png)
 
 
-My best achievement 67M blocks out of 103M block. With that being said my personal opinion is that EOS is doomed to die any time soon. Because the aren't so much history nodes out there. If at all...
+My best achievement **67M** blocks out of **103M** block. With that being said my personal opinion is that EOS is doomed to die any time soon. Because the aren't so much history nodes out there. If at all...
 
 Contact me if you have a FULL historical EOS node copy and can share the data with me. Or just want to add something to this topic too. 
 
