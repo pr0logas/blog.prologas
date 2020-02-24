@@ -83,3 +83,7 @@ My best achievement **67M** blocks out of **103M** block. With that being said m
 Contact me if you have a FULL historical EOS node copy and can share the data with me. Or just want to add something to this topic too. 
 
 ---
+
+**Keywords:**
+
+*EOS historical node*, EOSIO, node, blockchain, blocks, transactions, consensus, St13runtime_error, net_plugin.cpp, chain_plugin.cpp, reversible database dirty flag set, go_away_message*
