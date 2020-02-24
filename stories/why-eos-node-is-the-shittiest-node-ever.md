@@ -66,7 +66,7 @@ Note that the seed nodes can have different ports so you have strictly typed the
 The EOS node problem is that:
 ```
 Syncs on 1 CPU core; (I know, sounds like insanity for 100M+ blocks);
-Don't have a graceful shutdown of any kind;
+Don't have a graceful shutdown of any kind (pkill -15 nodeos sets a dirty database flag);
 During the syncing HTTP API don't respond or have a latency out of normal understanding;
 Gives you a non-fatal error but stops the syncing after all;
 During non-gracefull shutdown asks for 'hard-replay-blockchain' which is slower than actual syncing!!!
