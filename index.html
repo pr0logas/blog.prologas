@@ -18,6 +18,13 @@
     <!-- favicon -->
     <script>
 
+    function setLastStorie(value) {
+        var div = $(".zero-primary");
+        div.attr("src","stories/" + value + ".md");
+        document.querySelector('#zero-md').render();
+        div.removeClass("d-none");
+    }
+
     function newStory(value) {
         $('#zero-md').hide();
         $('.container-allstories').hide();
@@ -25,7 +32,6 @@
         div.attr("src","stories/" + value + ".md");
         document.querySelector('#content').render();
         div.removeClass("d-none");
-        console.log(value)
     }
 
     function allStories() {
@@ -55,6 +61,7 @@
 <body>
     <!--<script type="module" src="assets/js/pickrandom.js"></script>-->
     <script type="module" src="assets/js/time.js"></script>
+    <script type="module" src="assets/js/picklatest.js"></script>
 
     <div class="container-md">
         <a href="https://prologas.net">
@@ -80,7 +87,7 @@
     <br>
 
     <div class="container-sm">
-        <zero-md id="zero-md" src="stories/how-to-install-aws-bucket-software-centos7.md"></zero-md>
+        <zero-md id="zero-md" manual-render class="zero-primary d-none" src="stories/how-to-install-aws-bucket-software-centos7.md"></zero-md>
         <zero-md id="content" manual-render class="zero-userStoryChoiceClass d-none" src="stories/how-to-dump-mysql-database-linux.md"></zero-md>
         <div class="container-allstories"></div>
         <div class="container-aboutme"></div>
