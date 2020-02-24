@@ -74,7 +74,8 @@ Other no reason sync stops with no error or warn messages. As a bonus gives you 
 ```
 
 ![EOS_ERROR](https://raw.githubusercontent.com/pr0logas/blog.prologas/master/assets/images/eos_dirtyflag.png)
-![EOS_Node](https://raw.githubusercontent.com/pr0logas/blog.prologas/master/assets/images/cpu_core.jpg)
+
+![EOS_Node](https://raw.githubusercontent.com/pr0logas/blog.prologas/master/assets/images/eos_cpucore.png)
 
 
 My best achievement 67M blocks out of 103M block. With that being said my personal opinion is that EOS is doomed to die any time soon. Because the aren't so much history nodes out there. If at all...
