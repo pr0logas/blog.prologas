@@ -16,5 +16,11 @@
     "stories": "how-to-dump-mysql-bash-script",
     "category": "Linux",
     "subcategory": "MySQL"
+  },
+  {
+    "date": "2020-02-24",
+    "stories": "why-eos-node-is-the-shittiest-node-ever",
+    "category": "BlockChain",
+    "subcategory": "EOS"
   }
 ]

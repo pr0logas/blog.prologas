@@ -7,6 +7,6 @@
 
 As a Dev-Ops, I managed to run many different nodes for my own and business needs. Starting from Bitcoin / Dash / Ethereum / TRON / Waves and so on.
 
-But we have to admit, EOS is a unique "creature" of all times.
+But we have to admit, EOS is a unique "creature" of all time.
 
 ---
